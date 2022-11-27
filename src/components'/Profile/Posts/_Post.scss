@@ -1,0 +1,30 @@
+
+
+.my_post {
+    color: white;
+    margin-bottom: 20px;
+
+    .ps {
+        font-size:30px;
+        margin-bottom: 20px;
+    }
+
+  .new {
+        display: flex;
+        margin-bottom: 20px;
+
+        button {
+            background-color: black;
+            color: white;
+            margin-left: 20px;
+            width: 100px;
+            border: 1px solid white;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0px 0px 5px 0px white;
+            }
+        }
+     
+    }
+}

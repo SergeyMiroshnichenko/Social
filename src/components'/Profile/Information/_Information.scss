@@ -1,0 +1,20 @@
+ .wrapper_information {
+    display:  flex;
+    flex-direction: column;
+
+    .title_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 50vh;
+            width: 60%;
+            padding: 20px 0px;
+        }
+    }
+    
+    .avatar {
+        margin-bottom: 20px;
+    }
+ }

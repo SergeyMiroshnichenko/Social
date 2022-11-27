@@ -1,0 +1,322 @@
+.body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.header .container .site {
+  text-align: center;
+  color: white;
+  padding: 30px 0px;
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  width: 20%;
+  height: 100vh;
+  background-color: black;
+}
+.menu .container {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu .container nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.menu .container nav a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+  padding: 5px;
+  text-decoration: none;
+}
+.menu .container nav a:hover {
+  border: 1px solid white;
+  opacity: 50%;
+}
+.menu .container nav .active {
+  color: gold;
+}
+
+.wrapper_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100vh;
+  flex-direction: column;
+  background-color: black;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+.profile .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wrapper_post {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.wrapper_post .like {
+  margin-left: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px 0px white;
+}
+.wrapper_post .user_foto {
+  padding-right: 10px;
+}
+.wrapper_post .user_foto img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.my_post {
+  color: white;
+  margin-bottom: 20px;
+}
+.my_post .ps {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.my_post .new {
+  display: flex;
+  margin-bottom: 20px;
+}
+.my_post .new button {
+  background-color: black;
+  color: white;
+  margin-left: 20px;
+  width: 100px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.my_post .new button:hover {
+  box-shadow: 0px 0px 5px 0px white;
+}
+
+.wrapper_dialogs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+.wrapper_dialogs .container {
+  display: flex;
+  width: 90%;
+  border: 1px solid white;
+  height: 100vh;
+}
+.wrapper_dialogs .container .user_dialog {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  padding: 30px;
+}
+.wrapper_dialogs .container .my_dialogs {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 60%;
+}
+.wrapper_dialogs .container .my_dialogs .wrapper_my_dialog {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper_news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+}
+
+.wrapper_music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+}
+
+.wrapper_setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+}
+
+.name_dialog {
+  display: flex;
+  padding: 10px;
+  transition: 0.5s;
+  transform: 0.3s;
+  justify-content: start;
+  align-items: center;
+}
+.name_dialog .foto_user {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name_dialog a {
+  display: inline-flex;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  padding: 5px;
+  text-decoration: none;
+}
+.name_dialog a:hover {
+  border: 1px solid white;
+  opacity: 50%;
+}
+.name_dialog a .active {
+  color: white;
+}
+
+.message {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.wrapper_information {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper_information .title_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper_information .title_img img {
+  height: 50vh;
+  width: 60%;
+  padding: 20px 0px;
+}
+.wrapper_information .avatar {
+  margin-bottom: 20px;
+}
+
+.friendly {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+.friendly .my_friendly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.friendly .my_friendly .foto {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+.friendly .my_friendly .name_friend {
+  font-size: 12px;
+}
+
+.wrapper_friend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+.wrapper_friend .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper_friend .container .title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.wrapper_friend .my_best_friend {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.foto_user {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,32 @@
+
+.friendly {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+
+
+    .my_friendly {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+
+        .foto {
+            width: 50px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 20px;
+            margin-bottom: 5px;
+            
+        }
+
+
+        .name_friend {
+            font-size: 12px;
+        }
+    }
+}

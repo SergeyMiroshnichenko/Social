@@ -1,0 +1,23 @@
+
+.wrapper_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    flex-direction: column;
+    background-color:black;
+}
+.profile {
+    display:  flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    color: white;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
