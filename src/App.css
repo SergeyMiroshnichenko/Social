@@ -144,6 +144,7 @@
 .wrapper_dialogs .container {
   display: flex;
   width: 90%;
+  border: none;
 }
 .wrapper_dialogs .container .user_dialog {
   display: flex;
@@ -354,6 +355,7 @@
 .wrapper_dialogs .container {
   display: flex;
   width: 90%;
+  border: none;
 }
 .wrapper_dialogs .container .user_dialog {
   display: flex;

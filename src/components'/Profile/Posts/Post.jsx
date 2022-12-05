@@ -31,7 +31,8 @@
            <h3>My post</h3>
        </div> 
        <div className="new">
-           <textarea onChange={onPostChange}  ref={newPostElement} value={props.newPostText} />
+           <textarea onChange={onPostChange}  
+           ref={newPostElement} value={props.newPostText} />
            <button onClick={addPost} >Add Post</button>
        </div>
       {posts}

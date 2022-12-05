@@ -7,7 +7,7 @@ const ADD_MESSAGE_USER="ADD-MESSAGE-USER"
  let store = {
 
   
-    _MassagePost: {
+    _state: {
 
         myMessage :{
 
@@ -56,7 +56,7 @@ const ADD_MESSAGE_USER="ADD-MESSAGE-USER"
         this._callSubscriber=observer;
     },
     getMassagePost (){
-        return this._MassagePost
+        return this._state
     },
    
 
@@ -65,30 +65,30 @@ const ADD_MESSAGE_USER="ADD-MESSAGE-USER"
         if (action.type===ADD_POST) {
             let newPost={
                 id:5,
-                textMassage:this._MassagePost.posts.newPostText,
+                textMassage:this._state.posts.newPostText,
                 like:"0"  
             }
         
-            this._MassagePost.posts.messageData.push(newPost);
-            this._MassagePost.posts.newPostText=""
-            this._callSubscriber (this._MassagePost)
+            this._state.posts.messageData.push(newPost);
+            this._state.posts.newPostText=""
+            this._callSubscriber (this._state)
         }
          else if (action.type === UPDATE_NEW_POST_TEXT) {
-            store._MassagePost.posts.newPostText = action.newText;
+            store._state.posts.newPostText = action.newText;
             this._callSubscriber()
         }
         else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
-            store._MassagePost.myMessage.newMessageBody= action.newMessagetext;
+            store._state.myMessage.newMessageBody= action.newMessagetext;
             this._callSubscriber()
         }
         else if (action.type = ADD_MESSAGE_USER) {
             let newMessageUser = {
                 id:9,
-                textMassage : this._MassagePost.myMessage.newMessageBody,
+                textMassage : this._state.myMessage.newMessageBody,
             }
-            this._MassagePost.myMessage.newMessageBody=""
-            this._MassagePost.myMessage.massageText.push(newMessageUser)
-            this._callSubscriber (this._MassagePost)
+            this._state.myMessage.newMessageBody=""
+            this._state.myMessage.massageText.push(newMessageUser)
+            this._callSubscriber (this._state)
           
         }
 
